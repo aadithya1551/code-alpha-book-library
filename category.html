@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Ga+Maamli&display=swap"
+      rel="stylesheet">
+   <title>Categories</title>
+</head>
+<style>
+   .main-container {
+      background-position: center;
+      background-size: 200rem;
+      background-repeat: no-repeat;
+      padding: 25px;
+   }
+
+   .container {
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   .items {
+      width: 250px;
+      text-align: center;
+      padding: 20px 20px;
+      /* backdrop-filter: blur(100px); */
+      border-radius: 20px;
+   }
+
+   .items p {
+      text-align: justify;
+   }
+
+   .items button {
+      padding: 10px 25px;
+      border: 2px outset rgb(173, 136, 207);
+      background-color: rgb(103, 26, 175);
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      color: whitesmoke;
+      cursor: pointer;
+   }
+
+   .items button:hover {
+      background-color: rgb(173, 136, 207);
+   }
+
+
+   .img-con {
+      /* width: inherit; */
+      overflow: hidden;
+   }
+
+   .img-con img {
+      height: 250px;
+      width: 200px;
+      object-fit: fit;
+      transition: all 0.15s;
+   }
+
+   img:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 0.8;
+   }
+
+   h1 {
+      text-align: center;
+      color: rgb(202, 147, 76);
+      font-family: "Bodoni Moda SC", serif;
+      background-color: rgb(27, 27, 27);
+      padding: 40px;
+   }
+
+   h2 {
+      color: rgb(202, 147, 76);
+      /* color: rgb(66, 66, 66); */
+      font-family: "Ga Maamli", sans-seri;
+      letter-spacing: 2px;
+      display: inline;
+      font-size: 30px;
+   }
+
+   .main-container img{
+      display: inline;
+      margin: 0px 5px;
+   }
+
+   @media only screen and (max-width:500px){
+      .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 40px;
+   }
+
+   .items {
+      width: 250px;
+      text-align: center;
+      padding: 8px 4px;
+      /* backdrop-filter: blur(100px); */
+      border-radius: 20px;
+   }
+
+   }
+  
+
+</style>
+
+<body>
+   <h1>Categories</h1>
+   <div class="main-container">
+      <img src="images/icons8-book-64.png" height="32px" width="32px" alt="">
+      <h2>Fantasy</h2>
+      <hr>
+      <div class="container">
+         <div class="items">
+            <div class="img-con"><img src="images/game of thrones.png" alt=""></div>
+            <h3>Game of Thrones</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+         <div class="items">
+            <div class="img-con"><img src="images/DD.jpg" alt=""></div>
+            <h3>A Dance with Dargons</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+         <div class="items">
+            <div class="img-con"><img src="images/hp1.jpeg" alt=""></div>
+            <h3>Harry Potter and The Philosopher's Stone</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+      </div>
+
+      <img src="images/icons8-book-64.png" height="32px" width="32px" alt="">
+      <h2>Motivation</h2>
+      <hr>
+      <div class="container">
+         <div class="items">
+            <div class="img-con"><img src="images/think.png" alt=""></div>
+            <h3>Think and Grow Rich</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+         <div class="items">
+            <div class="img-con"><img src="images/rich dad.png" alt=""></div>
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+         <div class="items">
+            <div class="img-con"><img src="images/alchemist.png" alt=""></div>
+            <h3>The Alchemist</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+      </div>
+
+      <img src="images/icons8-book-64.png" height="32px" width="32px" alt="">
+      <h2>Computer</h2>
+      <hr>
+      <div class="container">
+         <div class="items">
+            <div class="img-con"><img src="images/art of com.png" alt=""></div>
+            <h3>The Art of Computer Programming</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+         <div class="items">
+            <div class="img-con"><img src="images/clean code" alt=""></div>
+            <h3>Clean Code</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+         <div class="items">
+            <div class="img-con"><img src="images/the pp.png" alt=""></div>
+            <h3>The Pragmatic Programmer</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatibus.</p>
+            <button class="btnn">Download</button>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
